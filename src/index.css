@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html {
+  font-family: 'Poppins';
+}
+
+/* App.tsx */
+
+.root-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.card-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 366px;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: #f9f9fc;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 16px 18px 20px 18px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  padding-left: 90px;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  color: #818181;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #eae8fe;
+  padding: 8px 0;
+  color: #8463e7;
+}
+
+.toggle-btn-container {
+  display: flex;
+  height: 48px;
+  width: 48px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px;
+}
+
+.user-avatar-container {
+  position: absolute;
+  top: -16px;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.circular-progress {
+  position: relative;
+  display: flex;
+  height: 80px;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.user-avatar-propic {
+  height: 83%;
+  width: 83%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.user-avatar-trust-indicator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -8px;
+  margin: 0 auto;
+  display: flex;
+  height: 28px;
+  width: 28px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #6a3eea;
+  padding: 4px;
+  font-size: 13px;
+  color: white;
+}
