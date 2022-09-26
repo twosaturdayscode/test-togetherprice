@@ -14,7 +14,7 @@ export default function ToggleButton() {
       className="toggle-btn-container"
       style={checked ? styles.on : styles.off}
     >
-      <span className="text-[#794BFF]">
+      <span>
         {checked ? (
           <svg
             width="20"
@@ -32,10 +32,11 @@ export default function ToggleButton() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
+            width="20"
+            height="20"
             viewBox="0 0 24 24"
             strokeWidth="2"
-            stroke="currentColor"
-            className="h-5 w-5"
+            stroke="#794BFF"
           >
             <path
               strokeLinecap="round"

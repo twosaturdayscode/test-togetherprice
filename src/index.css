@@ -100,11 +100,22 @@ html {
   border-radius: 50%;
 }
 
-.user-avatar-propic {
+.user-avatar-propic-container {
   height: 83%;
   width: 83%;
   border-radius: 50%;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-avatar-propic {
+  height: 95%;
+  width: 95%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
 }
 
 .user-avatar-trust-indicator {
@@ -123,4 +134,5 @@ html {
   padding: 4px;
   font-size: 13px;
   color: white;
+  line-height: 0;
 }

@@ -19,7 +19,13 @@ export default function UserAvatar({ trust_value }: IUserAvatar) {
   return (
     <div className="user-avatar-container">
       <div className="circular-progress" ref={circularProgress}>
-        <div className="user-avatar-propic"></div>
+        <div className="user-avatar-propic-container">
+          <img
+            src="https://source.unsplash.com/random/?person"
+            alt="The user profile picture"
+            className="user-avatar-propic"
+          />
+        </div>
         <span className="user-avatar-trust-indicator">{trust_value}</span>
       </div>
     </div>
