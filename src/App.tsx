@@ -14,9 +14,13 @@ function App() {
     const API_URL = 'https://my.api.mockaroo.com/users.json?key=aa675110'
 
     async function fetchUsers() {
-      const response = await fetch(API_URL)
-      const data = (await response.json()) as User[]
-      if (!ignore) setUsers(data)
+      try {
+        const response = await fetch(API_URL)
+        const data = (await response.json()) as User[]
+        if (!ignore) setUsers(data)
+      } catch (error) {
+        console.error('Hey an error occured: ', error)
+      }
     }
 
     fetchUsers()
